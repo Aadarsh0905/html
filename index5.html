@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .overflow{
+            width: 40vw;
+            height: 10vh;
+            border: 3px solid black;
+            overflow:hidden auto;
+            text-overflow: ellipsis;
+
+        }
+        .overflow::before{
+            content:"Harry is good";
+        }
+        .overflow::after{
+            content: "Harry";
+        }
+        .overflow::selection{
+            color: red;
+            background-color: grey;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="overflow">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, inventore fuga accusantium praesentium debitis autem eius magni, voluptas aspernatur eos totam quia minima magnam dignissimos voluptate voluptatibus itaque nulla vitae eligendi eaque maiores impedit dolor ea sint. Reprehenderit neque nam voluptate eos debitis rerum? Natus magni dolorem enim vitae sunt maiores incidunt perspiciatis suscipit iste qui autem, vel architecto labore quia libero esse porro officiis repellendus pariatur accusantium quam minus fugit sit. Doloremque consequatur voluptatibus tempore rerum provident magni ipsam aut, ab debitis harum dicta, amet dolore earum necessitatibus reprehenderit?</div>
+</body>
+</html>
